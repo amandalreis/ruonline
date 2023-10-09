@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "ruonline",
-    "slug": "ruonline",
+    "name": "Tela-de-Login",
+    "slug": "Tela-de-Login",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
