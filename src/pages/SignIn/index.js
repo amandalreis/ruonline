@@ -10,10 +10,12 @@ import {
 import { Ionicons } from '@expo/vector-icons';
 import { useState, useEffect } from 'react';
 import * as Animatable from 'react-native-animatable';
+import { useNavigation } from '@react-navigation/native';
 
 export default function SignIn() {
   const [inputSenha, setInput] = useState('');
   const [hidePass, setHidePass] = useState(true);
+  const navigation = useNavigation();
 
   //Sistema provisório de Autenticação
   const [username, setUsername] = useState('');
@@ -80,7 +82,9 @@ export default function SignIn() {
           <Ionicons name="eye" color="#FFF" size={25} />
         </TouchableOpacity>
 
-        <TouchableOpacity style={styles.button} onPress={handleLogin}>
+        <TouchableOpacity
+          style={styles.button}
+          onPress={() => navigation.navigate('Payment')}>
           <Text style={styles.buttonText}>Acessar</Text>
         </TouchableOpacity>
 

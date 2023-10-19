@@ -32,7 +32,7 @@ export default function PaymentComplete() {
         <Text style={styles.title}>Obrigado por comprar com nosso app</Text>
         <TouchableOpacity
           style={styles.button}
-          onPress={() => navigation.navigate('Payment')}>
+          onPress={() => navigation.navigate('Welcome')}>
           <Text style={styles.buttonText}>Finalizar</Text>
         </TouchableOpacity>
       </Animatable.View>
